@@ -45,3 +45,11 @@ def _check_bounded_integer(value, description, minimum, maximum):
             f"Please enter a valid {description}, your input {value} is not between {minimum} and {maximum}.")
     else:
         return value
+
+
+def input_string(prompt):
+    value = input(prompt)
+    if value.lower() == 'q':
+        return
+    else:
+        return value
